@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'tag', 'hello-world', 'us-central1-docker.pkg.dev/argo-local-khalk/khalk-docker-ar/prod-prov-image']
+images: ['us-central1-docker.pkg.dev/argo-local-khalk/khalk-docker-ar/prod-prov-image']
+options:
+  requestedVerifyOption: VERIFIED
